@@ -1,6 +1,7 @@
 import { Button, VerticalBox , LineEdit} from "std-widgets.slint";
 
 export component AppWindow inherits Window {
+    title: "BMI Calculator";
     in property <string> results: "";
     callback calculate-bmi(string, string);
 
