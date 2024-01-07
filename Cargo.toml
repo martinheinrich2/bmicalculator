@@ -1,0 +1,23 @@
+[package]
+name = "bmicalculator"
+version = "0.1.0"
+authors = [
+    "Martin.Heinrich <75615821+martinheinrich2@users.noreply.github.com>",
+]
+edition = "2021"
+build = "build.rs"
+description = "A desktop app that calculates the BMI."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+slint = "1.0"
+
+[build-dependencies]
+slint-build = "1.0"
+
+[package.metadata.bundle]
+name = "BMI Calculator"
+identifier = "io.github.martinheinrich2.bmi-calculator-desktop"
+description = "Calculate your BMI from your weight and height."
+icon = ["./icon.png", "./icon@2x.png"]
